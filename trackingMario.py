@@ -25,7 +25,7 @@ def main():
 
 	# Video saving parameters, uncomment below to use openCV videowriter
 	fourcc = cv2.VideoWriter_fourcc(*'MJPG')
-	vidOut = cv2.VideoWriter('trackedVideo.mp4',fourcc, 30.0, (1280,720))
+	vidOut = cv2.VideoWriter('trackedVideo.avi',fourcc, 30.0, (1280,720))
 	while(vidCap.isOpened()):
 		frameExists ,imageFrame=vidCap.read()
 		if(frameExists):
