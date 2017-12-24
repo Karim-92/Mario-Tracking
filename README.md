@@ -22,7 +22,7 @@ Algorithm Description:
 it scans the image for a matching image to the given template. It can be made more robust via selecting a proper template, especially for videos.
 + The algorithm is known to be translation invariant, but if you try it with rotated objects it will fail horribly. Other more robust algorithms exist for that purpose such as keypoint matching.
 
-Algorithm Description:
+Discussion:
 ---
 + Template matching can be more robust to different scales by taking many matches and selecting one with the highest correlation region (Image Pyramids could work in theory too).
 + Template matching expects grayscale images for both the template and the image on which it'll be scanned so it shouldn't be affected much by the difference in colors.
